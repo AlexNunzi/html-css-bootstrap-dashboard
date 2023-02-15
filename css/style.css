@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+
+}
+
+/* DEBUG -------------------------------------------------- */
+
+.ms_debug header{
+    background-color: red;
+}
+
+.ms_debug main{
+    background-color: blueviolet;
+}
+
+.ms_debug main aside{
+    background-color: darkmagenta;
+}
+
+.ms_debug main .ms_main-content{
+    background-color: indianred;
+}
+
+.ms_debug .box{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 2px dashed green;
+}
+
+.ms_debug aside > div{
+    border: 2px dotted black;
+}
+
+
+/* REGOLE DI CSS ------------------------------------------ */
+/* REGOLE GENERALI ---------------------------------------- */
+
+
+/* HEADER ------------------------------------------------- */
+
+header{
+    height: 70px;
+}
+
+header nav .ms_icon{
+    display: none;
+}
+
+/* MAIN --------------------------------------------------- */
+main{
+    height: calc(100vh - 70px);
+}
+
+
+/* ASIDE */
+
+main aside{
+    height: 100%;
+    width: 70px;
+}
+
+/* MAIN-CONTENT */
+
+main .ms_main-content{
+    height: 100%;
+    width: calc(100% - 70px);
+}
+
+/* ANIMAIZONI --------------------------------------------- */
+
+
+/* MEDIA QUERY -------------------------------------------- */
+
+@media screen and (min-width: 768px){
+    header nav .ms_icon{
+        display: inline-block;
+        margin: 0 0.75rem;
+    }
+}
