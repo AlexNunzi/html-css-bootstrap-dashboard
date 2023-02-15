@@ -52,6 +52,10 @@
     display: inline-block;
 }
 
+.ms_debug .ms_main-bottom{
+    border: dotted 3px white;
+}
+
 
 /* REGOLE DI CSS ------------------------------------------ */
 /* REGOLE GENERALI ---------------------------------------- */
