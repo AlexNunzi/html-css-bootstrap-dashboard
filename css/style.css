@@ -112,13 +112,21 @@ main .ms_main-top .ms_boxlabel.ms_regroup-pills{
     display: none;
 }
 
+main .offcanvas.offcanvas-end{
+    width: 100%;
+}
+
 
 /* ANIMAIZONI --------------------------------------------- */
 
 
 /* MEDIA QUERY -------------------------------------------- */
 
-@media screen and (min-width: 576px){
+
+@media screen and (min-width: 768px){
+
+    /* MAIN-CONTENT */
+
     main .ms_main-top{
         flex-direction: row;
     }
@@ -126,39 +134,43 @@ main .ms_main-top .ms_boxlabel.ms_regroup-pills{
     main .ms_main-top .ms_offcanvasbtn{
         order: 1;
     }
+
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 992px){
+        
+        /* HEADER */
 
-    /* HEADER */
-
-    header nav .ms_icon{
-        display: inline-block;
-        margin: 0 0.75rem;
-    }
-
-    /* ASIDE */
-
-    main aside{
-        width: 150px;
-    }
-
-    main aside .ms_boxlabel{
-        display: inline-block;
-    }
-
-    /* MAIN-CONTENT */
-
-    main .ms_main-content{
-        width: calc(100% - 150px);
-    }
-
-    main .ms_main-top .ms_boxlabel.ms_regroup{
-        display: none;
-    }
+        header nav .ms_icon{
+            display: inline-block;
+            margin: 0 0.75rem;
+        }
     
-    main .ms_main-top .ms_boxlabel.ms_regroup-pills{
-        display: inline-block;
-    }
+        /* ASIDE */
 
+        main aside{
+            width: 150px;
+        }
+    
+        main aside .ms_boxlabel{
+            display: inline-block;
+        }
+
+        /* MAIN-CONTENT */
+
+        main .ms_main-content{
+            width: calc(100% - 150px);
+        }
+
+        main .ms_main-top .ms_boxlabel.ms_regroup{
+            display: none;
+        }
+        
+        main .ms_main-top .ms_boxlabel.ms_regroup-pills{
+            display: inline-block;
+        }
+
+        main .offcanvas.offcanvas-end{
+            width: 50%;
+        }
 }
