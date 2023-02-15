@@ -40,8 +40,16 @@
     border: 2px dashed green;
 }
 
+.ms_debug .ms_borderdebug{
+    border: 2px dotted black;
+}
+
 .ms_debug aside > div{
     border: 2px dotted black;
+}
+
+.ms_debug .ms_main-content .ms_boxlabel{
+    display: inline-block;
 }
 
 
@@ -87,10 +95,34 @@ main .ms_main-content{
     width: calc(100% - 70px);
 }
 
+main .ms_main-top{
+    display: flex;
+    flex-direction: column;
+}
+
+main .ms_main-top .ms_boxlabel.ms_regroup{
+    display: inline-block;
+}
+
+main .ms_main-top .ms_boxlabel.ms_regroup-pills{
+    display: none;
+}
+
+
 /* ANIMAIZONI --------------------------------------------- */
 
 
 /* MEDIA QUERY -------------------------------------------- */
+
+@media screen and (min-width: 576px){
+    main .ms_main-top{
+        flex-direction: row;
+    }
+
+    main .ms_main-top .ms_offcanvasbtn{
+        order: 1;
+    }
+}
 
 @media screen and (min-width: 768px){
 
@@ -115,6 +147,14 @@ main .ms_main-content{
 
     main .ms_main-content{
         width: calc(100% - 150px);
+    }
+
+    main .ms_main-top .ms_boxlabel.ms_regroup{
+        display: none;
+    }
+    
+    main .ms_main-top .ms_boxlabel.ms_regroup-pills{
+        display: inline-block;
     }
 
 }
