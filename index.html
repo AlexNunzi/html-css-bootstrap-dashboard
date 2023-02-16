@@ -64,7 +64,7 @@
 
             <aside class="d-flex flex-column justify-content-between align-items-center">
 
-                    <ul class="flex-shrink-0 px-2 pt-4 list-unstyled text-white">
+                    <ul class="flex-shrink-0 px-2 pt-4 list-unstyled">
                         <li class="mx-auto py-2">
                             <a href="#" class="list-group-item list-group-item-action p-1">
                                 <i class="fa-solid fa-house me-lg-3 align-middle"></i><span class="ms_iconlabel align-middle">Home</span>
@@ -83,7 +83,7 @@
                     </ul>
 
                     <div class="flex-shrink-0 p-2">
-                        <div class="mx-auto my-2 text-white">
+                        <div class="mx-auto my-2">
                             <a href="#" class="list-group-item list-group-item-action p-1">
                                 <i class="fa-solid fa-gear me-lg-3 align-middle"></i><span class="ms_iconlabel align-middle">Admin</span>
                             </a>
@@ -98,17 +98,17 @@
 
             <!-- MAIN-TOP -->
 
-                <div class="ms_main-top d-flex flex-column flex-md-row ms_borderdebug d-flex justify-content-between">
+                <div class="ms_main-top d-flex flex-column flex-md-row d-flex justify-content-between bg-primary px-3 py-4">
                     
-                    <div class="order-md-1 ms_borderdebug">
-                        <span class="text-white me-2">Nuovo studente</span>
+                    <div class="order-md-1">
+                        <span class="me-2">Nuovo studente</span>
                         <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             <i class="fa-solid fa-plus"></i>
                         </button>
                           
                         <!-- OFFCANVAS -->
 
-                          <div class="offcanvas offcanvas-end px-3 py-3 overflow-y-auto" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas offcanvas-end px-3 py-3 overflow-y-auto" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 
                             <div class="offcanvas-header p-0 pb-3">
                                 <span class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</span>
@@ -209,33 +209,38 @@
                                 </div>
                               </form>
 
-                          </div>
+                        </div>
+                    </div>
+
+                    <div class="my-4 my-md-0">
+
+                        <div class="mb-1">
+                            <h5 class="d-inline-block me-1">Boolean</h5>
+                            <span class="badge rounded-pill p-2">Piano blaze</span>
+                        </div>
+
+                        <div>
+                            <span class="badge rounded-pill p-2">Piano blaze</span>
+                            <span>
+                                <i class="fa-solid fa-angles-right"></i>
+                            </span>
+                            <span class="rounded-pill p-2 d-inline-block d-lg-none badge">
+                                <i class="fa-solid fa-plus"></i>
+                            </span>
+                            <span class="badge rounded-pill p-2 d-none d-lg-inline-block">Piano blaze</span>
+                            <span class="badge rounded-pill p-2 d-none d-lg-inline-block">Piano blaze</span>
+                            <span class="badge rounded-pill p-2 d-none d-lg-inline-block">Piano blaze</span>
+
+                        </div>
 
                     </div>
 
-                    <div class="ms_borderdebug">
-
+                    <div>
                         <div>
-                            <div class="ms_boxlabel"></div>
-                            <div class="ms_boxlabel"></div>
-                        </div>
-
-                        <div>
-                            <div class="ms_boxlabel"></div>
-                            <div class="ms_boxlabel d-inline-block d-lg-none">*</div>
-                            <div class="ms_boxlabel d-none d-lg-inline-block"></div>
-                            <div class="ms_boxlabel d-none d-lg-inline-block"></div>
-                            <div class="ms_boxlabel d-none d-lg-inline-block"></div>
-                        </div>
-
-                    </div>
-
-                    <div class="ms_borderdebug">
-                        <div>
-                            <div class="ms_boxlabel"></div>
+                            <span>Studenti online negli ultimi 30 minuti</span>
                         </div>
                         <div>
-                            <div class="ms_boxlabel"></div>
+                            <span class="fs-5">125</span>
                         </div>
                     </div>
 

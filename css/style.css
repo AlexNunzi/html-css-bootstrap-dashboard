@@ -7,6 +7,8 @@
 :root{
     --soft-gray: #DFDFDF;
     --dark-blue: #061627;
+    --pills-blue: #1345AC;
+    --text-white: #FFFFFF;
 }
 
 /* DEBUG -------------------------------------------------- */
@@ -91,6 +93,7 @@ main{
 
 main aside{
     background-color: var(--dark-blue);
+    color: var(--text-white);
     height: 100%;
     width: 70px;
 }
@@ -112,10 +115,21 @@ main aside .ms_iconlabel{
 main .ms_main-content{
     height: 100%;
     width: calc(100% - 70px);
+    font-size: 0.75rem;
 }
 
 main .offcanvas.offcanvas-end{
     width: 100%;
+}
+
+/* MAIN-TOP */
+
+main .ms_main-top{
+    color: var(--text-white);
+}
+
+main .ms_main-top .rounded-pill{
+    background-color: var(--pills-blue);
 }
 
 
