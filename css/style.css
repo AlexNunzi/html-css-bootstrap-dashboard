@@ -9,6 +9,9 @@
     --dark-blue: #061627;
     --pills-blue: #1345AC;
     --text-white: #FFFFFF;
+    --bg-light: #364552;
+    --bg-gray: #E9E7EA;
+    --pills-light-blue: #1143e8;
 }
 
 /* DEBUG -------------------------------------------------- */
@@ -62,6 +65,18 @@ main aside .ms_iconlabel{
     display: none;
 }
 
+/* ANIMAZIONI */
+
+main aside ul li:hover, 
+main aside .ms-link:hover{
+    transition: background-color 0.5s;
+}
+
+main aside ul li:hover, 
+main aside .ms-link:hover{
+    background-color: var(--bg-light);
+}
+
 /* MAIN-CONTENT */
 
 main .ms_main-content{
@@ -87,7 +102,7 @@ main .ms_main-top .rounded-pill{
 /* MAIN-BOTTOM */
 
 main #ms_next-groups tr th:first-child{
-    width: 45%;
+    width: 40%;
 }
 
 main #ms_next-groups th{
@@ -100,7 +115,9 @@ main #ms_next-groups tr td{
 }
 
 main #ms_next-groups tr td:first-of-type, 
-main #ms_next-groups tr .ms_date{
+main #ms_next-groups tr td:nth-child(2), 
+main #ms_next-groups tr .ms_date, 
+main #ms_next-groups tr .ms_roi{
     display: none;
 }
 
@@ -113,11 +130,33 @@ main #ms_next-groups i{
     height: 1rem;
 }
 
-/* ANIMAIZONI --------------------------------------------- */
+/* ANIMAZIONI */
 
+main #ms_next-groups tbody tr:hover{
+    background-color: var(--bg-gray);
+}
+
+main .ms_main-top .rounded-pill{
+    transition: background-color 0.25s;
+}
+
+main .ms_main-top .rounded-pill:hover{
+    background-color: var(--pills-light-blue);
+    cursor: pointer;
+}
 
 /* MEDIA QUERY -------------------------------------------- */
 
+@media screen and (min-width: 576px){
+    main #ms_next-groups tr td:nth-child(2), 
+    main #ms_next-groups tr .ms_roi{
+    display: table-cell;
+    }
+
+    main #ms_next-groups tr .ms_table-btns{
+        white-space: nowrap;
+    }
+}
 
 @media screen and (min-width: 768px){
 
@@ -154,4 +193,3 @@ main #ms_next-groups i{
             max-width: 800px;
         }
 }
-
