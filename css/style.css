@@ -132,6 +132,29 @@ main .ms_main-top .rounded-pill{
     background-color: var(--pills-blue);
 }
 
+/* MAIN-BOTTOM */
+
+main #ms_next-groups tr th:first-child{
+    width: 50%;
+}
+
+main #ms_next-groups th{
+    font-weight: normal;
+}
+
+main #ms_next-groups tr th:not(:first-of-type), 
+main #ms_next-groups tr td{
+    text-align: center;
+}
+
+main #ms_next-groups .ms_class-avatar{
+    width: 1.5rem;
+}
+
+main #ms_next-groups i{
+    width: 1rem;
+    height: 1rem;
+}
 
 /* ANIMAIZONI --------------------------------------------- */
 
