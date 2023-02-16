@@ -13,54 +13,6 @@
 
 /* DEBUG -------------------------------------------------- */
 
-.ms_debug header{
-    /* background-color: red; */
-}
-
-.ms_debug main{
-    background-color: blueviolet;
-}
-
-.ms_debug main aside{
-    /* background-color: darkmagenta; */
-}
-
-.ms_debug main .ms_main-content{
-    background-color: indianred;
-}
-
-.ms_debug .ms_box{
-    height: 20px;
-    width: 20px;
-    background-color: white;
-    border: 2px dashed green;
-}
-
-.ms_debug .ms_boxlabel{
-    height: 20px;
-    width: 40px;
-    background-color: white;
-    border: 2px dashed green;
-}
-
-.ms_debug .ms_borderdebug{
-    border: 2px dotted black;
-}
-
-.ms_debug aside > div, 
-.ms_debug aside > ul{
-    border: 2px dotted black;
-}
-
-.ms_debug .ms_main-content .ms_boxlabel{
-    display: inline-block;
-}
-
-.ms_debug .ms_main-bottom{
-    border: dotted 3px white;
-}
-
-
 /* REGOLE DI CSS ------------------------------------------ */
 /* REGOLE GENERALI ---------------------------------------- */
 
