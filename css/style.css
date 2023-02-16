@@ -5,7 +5,7 @@
 }
 
 :root{
-
+    --soft-gray: #DFDFDF;
 }
 
 /* DEBUG -------------------------------------------------- */
@@ -60,11 +60,22 @@
 /* REGOLE DI CSS ------------------------------------------ */
 /* REGOLE GENERALI ---------------------------------------- */
 
+.ms_bgsoftgray{
+    background-color: var(--soft-gray);
+}
 
 /* HEADER ------------------------------------------------- */
 
 header{
     height: 70px;
+}
+
+header .ms_logo{
+    height: 2rem;
+}
+
+header nav .input-group input{
+    font-size: 0.75rem;
 }
 
 
@@ -136,3 +147,4 @@ main .offcanvas.offcanvas-end{
             width: 50%;
         }
 }
+
