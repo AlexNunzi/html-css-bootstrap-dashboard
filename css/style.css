@@ -99,12 +99,8 @@ main aside{
     background-image: url(../img/sidebar-bg.png);
 }
 
-main aside ul i{
+main aside i{
     width: 1rem;
-}
-
-main aside .ms_box{
-    display: inline-block;
 }
 
 main aside .ms_iconlabel{
@@ -146,6 +142,7 @@ main .offcanvas.offcanvas-end{
     
         main aside .ms_iconlabel{
             display: inline-block;
+            font-size: 0.75rem;
         }
 
         /* MAIN-CONTENT */
