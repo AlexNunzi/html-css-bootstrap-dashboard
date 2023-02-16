@@ -67,9 +67,6 @@ header{
     height: 70px;
 }
 
-header nav .ms_icon{
-    display: none;
-}
 
 /* MAIN --------------------------------------------------- */
 main{
@@ -99,23 +96,6 @@ main .ms_main-content{
     width: calc(100% - 70px);
 }
 
-main .ms_main-top{
-    display: flex;
-    flex-direction: column;
-}
-
-main .ms_main-top .ms_boxlabel.ms_regroup{
-    display: inline-block;
-}
-
-main .ms_main-top .ms_boxlabel.ms_regroup-pills{
-    display: none;
-}
-
-main .offcanvas.offcanvas-end{
-    width: 100%;
-}
-
 
 /* ANIMAIZONI --------------------------------------------- */
 
@@ -126,26 +106,12 @@ main .offcanvas.offcanvas-end{
 @media screen and (min-width: 768px){
 
     /* MAIN-CONTENT */
-
-    main .ms_main-top{
-        flex-direction: row;
-    }
-
-    main .ms_main-top .ms_offcanvasbtn{
-        order: 1;
-    }
-
 }
 
 @media screen and (min-width: 992px){
         
         /* HEADER */
 
-        header nav .ms_icon{
-            display: inline-block;
-            margin: 0 0.75rem;
-        }
-    
         /* ASIDE */
 
         main aside{
@@ -160,17 +126,5 @@ main .offcanvas.offcanvas-end{
 
         main .ms_main-content{
             width: calc(100% - 150px);
-        }
-
-        main .ms_main-top .ms_boxlabel.ms_regroup{
-            display: none;
-        }
-        
-        main .ms_main-top .ms_boxlabel.ms_regroup-pills{
-            display: inline-block;
-        }
-
-        main .offcanvas.offcanvas-end{
-            width: 50%;
         }
 }

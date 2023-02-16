@@ -14,6 +14,9 @@
     <!-- HEADER -->
 
         <header class="d-flex align-items-center">
+
+        <!-- NAVBAR -->
+
             <nav class="navbar bg-body-tertiary w-100 p-1">
                 <div class="container-fluid flex-nowrap">
                   <a class="navbar-brand">Navbar</a>
@@ -24,13 +27,13 @@
                         <input class="form-control border-start-0 bg-transparent ps-0" type="search" placeholder="Prova a cercare: Lezioni di Laravel">
                     </div>
                     
-                    <div class="ms_icon">
+                    <div class="d-none d-lg-inline-block mx-lg-2">
                         <i class="fa-solid fa-list"></i>
                     </div>
-                    <div class="ms_icon">
+                    <div class="d-none d-lg-inline-block mx-lg-2">
                         <i class="fa-solid fa-list"></i>
                     </div>
-                    <div class="ms_icon">
+                    <div class="d-none d-lg-inline-block mx-lg-2">
                         <i class="fa-solid fa-list"></i>
                     </div>
 
@@ -48,6 +51,8 @@
                 </form>
                 </div>
               </nav>
+
+
         </header>
 
     <!-- MAIN -->
@@ -80,15 +85,15 @@
             </aside>
 
             <div class="ms_main-content d-flex flex-column overflow-y-auto">
-                <div class="ms_main-top ms_borderdebug d-flex justify-content-between">
+                <div class="ms_main-top d-flex flex-column flex-md-row ms_borderdebug d-flex justify-content-between">
                     
-                    <div class="ms_offcanvasbtn ms_borderdebug">
+                    <div class="order-md-1 ms_borderdebug">
                         <span>nuovo studente</span>
                         <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                             +
                         </button>
                           
-                          <div class="offcanvas offcanvas-end px-3 py-3 overflow-y-auto" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                          <div class="offcanvas offcanvas-end w-100 w-lg-50 px-3 py-3 overflow-y-auto" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 
                             <div class="offcanvas-header p-0 pb-3">
                                 <span class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</span>
@@ -200,10 +205,10 @@
                         </div>
                         <div>
                             <div class="ms_boxlabel"></div>
-                            <div class="ms_boxlabel ms_regroup">*</div>
-                            <div class="ms_boxlabel ms_regroup-pills"></div>
-                            <div class="ms_boxlabel ms_regroup-pills"></div>
-                            <div class="ms_boxlabel ms_regroup-pills"></div>
+                            <div class="ms_boxlabel d-inline-block d-lg-none">*</div>
+                            <div class="ms_boxlabel d-none d-lg-inline-block"></div>
+                            <div class="ms_boxlabel d-none d-lg-inline-block"></div>
+                            <div class="ms_boxlabel d-none d-lg-inline-block"></div>
                         </div>
                     </div>
 
