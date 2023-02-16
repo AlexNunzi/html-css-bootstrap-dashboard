@@ -115,7 +115,7 @@ main #ms_next-groups tr td{
 }
 
 main #ms_next-groups tr td:first-of-type, 
-main #ms_next-groups tr td:nth-child(2), 
+main #ms_next-groups tr td:nth-child(3), 
 main #ms_next-groups tr .ms_date, 
 main #ms_next-groups tr .ms_roi{
     display: none;
@@ -148,7 +148,7 @@ main .ms_main-top .rounded-pill:hover{
 /* MEDIA QUERY -------------------------------------------- */
 
 @media screen and (min-width: 576px){
-    main #ms_next-groups tr td:nth-child(2), 
+    main #ms_next-groups tr td:nth-child(3), 
     main #ms_next-groups tr .ms_roi{
     display: table-cell;
     }
