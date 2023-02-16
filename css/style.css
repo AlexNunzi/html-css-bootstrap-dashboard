@@ -6,12 +6,13 @@
 
 :root{
     --soft-gray: #DFDFDF;
+    --dark-blue: #061627;
 }
 
 /* DEBUG -------------------------------------------------- */
 
 .ms_debug header{
-    background-color: red;
+    /* background-color: red; */
 }
 
 .ms_debug main{
@@ -19,7 +20,7 @@
 }
 
 .ms_debug main aside{
-    background-color: darkmagenta;
+    /* background-color: darkmagenta; */
 }
 
 .ms_debug main .ms_main-content{
@@ -44,7 +45,8 @@
     border: 2px dotted black;
 }
 
-.ms_debug aside > div{
+.ms_debug aside > div, 
+.ms_debug aside > ul{
     border: 2px dotted black;
 }
 
@@ -88,15 +90,24 @@ main{
 /* ASIDE */
 
 main aside{
+    background-color: var(--dark-blue);
     height: 100%;
     width: 70px;
 }
 
-aside .ms_box{
+main aside{
+    background-image: url(../img/sidebar-bg.png);
+}
+
+main aside ul i{
+    width: 1rem;
+}
+
+main aside .ms_box{
     display: inline-block;
 }
 
-aside .ms_boxlabel{
+main aside .ms_iconlabel{
     display: none;
 }
 
@@ -133,7 +144,7 @@ main .offcanvas.offcanvas-end{
             width: 150px;
         }
     
-        main aside .ms_boxlabel{
+        main aside .ms_iconlabel{
             display: inline-block;
         }
 
