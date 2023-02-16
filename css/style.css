@@ -141,7 +141,7 @@ main #ms_next-groups i{
         }
 
         main .offcanvas.offcanvas-end{
-            width: 50%;
+            max-width: 800px;
         }
 }
 
