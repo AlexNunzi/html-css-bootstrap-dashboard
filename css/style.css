@@ -96,6 +96,10 @@ main .ms_main-content{
     width: calc(100% - 70px);
 }
 
+main .offcanvas.offcanvas-end{
+    width: 100%;
+}
+
 
 /* ANIMAIZONI --------------------------------------------- */
 
@@ -126,5 +130,9 @@ main .ms_main-content{
 
         main .ms_main-content{
             width: calc(100% - 150px);
+        }
+
+        main .offcanvas.offcanvas-end{
+            width: 50%;
         }
 }
